@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: visible;
   }
 
   body {
@@ -253,9 +254,10 @@
   }
 
   .about-image-grid {
-  size: 100%;
+    grid-area: 1 / 1fr;
   }
-
+.img-1 {
+  width: 100%; }
 
   /* Services Section */
   .services {
@@ -915,7 +917,7 @@
   }
 
   .about-image-grid {
-  grid-template-columns: 1fr;
+    max-width: 90%;
   }
 
   .features-grid {
@@ -951,6 +953,9 @@
   @media (max-width: 576px) {
   .hero h1 {
   font-size: 32px;
+  }
+  .about-image-grid {
+  size: 50%;
   }
 
   .section-title::before,
