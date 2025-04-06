@@ -89,3 +89,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         alert('There was an error submitting your form. Please try again.');
     });
 });
+
+function mymobFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

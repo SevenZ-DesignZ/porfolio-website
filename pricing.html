@@ -308,6 +308,42 @@
         }
 
         @media (max-width: 768px) {
+    .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+    }
+  
+    nav {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    transform: translateY(-180%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    }
+  
+    nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    }
+  
+    nav ul {
+    flex-direction: column;
+    }
+  
+    nav ul li {
+    margin: 10px 0;
+    }
+  
+    .nav-cta {
+    margin-left: 0;
+    margin-top: 20px;
+    }
+
+
             .pricing-hero {
                 padding: 150px 0 60px;
             }
@@ -331,7 +367,7 @@
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo">SevenZ</a>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" onclick="mymobfunction()">☰</button>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -494,6 +530,15 @@
                 }
             });
         });
+
+        function mymobFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
     </script>
 </body>
 </html>
