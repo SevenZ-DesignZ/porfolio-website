@@ -47,9 +47,9 @@ faqItems.forEach(item => {
 // Sticky header on scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.95)';
+        document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.4)';
     } else {
-        document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.8)';
+        document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.4)';
     }
 });
 
@@ -98,3 +98,27 @@ function mymobFunction() {
       x.style.display = "block";
     }
   }
+
+
+//show scroll to top button
+window.addEventListener('scroll', () => {
+    const scrollToTopBtn = document.getElementById('btn-back-to-top');
+    if (window.scrollY > 60) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+// Scroll to top functionality
+document.getElementById('btn-back-to-top').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
+
+
+
+

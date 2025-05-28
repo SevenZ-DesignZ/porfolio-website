@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sen:wght@400;700&family=Mochiy+Pop+P+One&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--text-light);
+        }
+
+        .btn-primary:hover {
+            background-color: #d30927;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 3px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            font-size: 14px;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: "──";
+            margin: 0 10px;
+        }
+                /* Pricing Page Specific Styles */
+        .Hero-Section {
+
+            padding: 180px 0 100px;
+            text-align: center;
+            background: linear-gradient(135deg, #272727 0%, #272727 100%);
+            color: white;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .Hero-Section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            
+        }
+
+        .Hero-Section p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+
+
+                @media (max-width: 768px) {
+    .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+    }
+  
+    nav {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    transform: translateY(-180%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    }
+  
+    nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    }
+  
+    nav ul {
+    flex-direction: column;
+    }
+  
+    nav ul li {
+    margin: 10px 0;
+    }
+  
+    .nav-cta {
+    margin-left: 0;
+    margin-top: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+            <!-- Scroll to top button-->
+   <button
+        type="button"
+        class="btn-back-to-top"
+        id="btn-back-to-top"
+        >
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Header - same as index.html -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none;">SevenZ</a>
+            <button class="mobile-menu-btn" onclick="mymobfunction()">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="pricing.html" class="btn btn-secondary">Website Pricing →</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero" id="about" style="padding-top: 180px; padding-bottom: 90px; height:fit-content;">
+    <div class="container  hero-content">
+        <h1>Hi <span>there</span></h1>
+        <p>I am a UI/UX designer and brand consultant. I am based in Brampton, ON, Canada.</p>
+        <p> I have a passion for creating beautiful and functional designs that enhance user experience. My goal is to help businesses establish a strong online presence through effective branding and design.</p>
+        <p>With a background in graphic design and a keen eye for detail, I specialize in creating user-friendly interfaces that are both visually appealing and easy to navigate. I believe that good design should not only look great but also serve a purpose and solve real problems for users.</p>
+        <p>Whether you need a new website, a redesign of your existing site, or help with branding and identity, I am here to help. I work closely with my clients to understand their needs and goals, and I strive to create designs that exceed their expectations.</p>    
+        <div class="hero-btns">
+            <!-- Link to open my resume in new window-->
+            <a href="https://docs.google.com/document/d/1fAWA4tp3a9TEmc9jxYbY_H5BMxByNf_Z/edit?usp=sharing&ouid=103339282796439774758&rtpof=true&sd=true" target="_blank" class="btn btn-primary">View My Resume</a>
+            <a href="index.html#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="assets/my image.png" alt="Hero Image" style="width: 120%; height: auto;">
+    </div>
+</section>
+
+    <script src="script.js"></script>
+    </script>
+    <script>
+    //show scroll to top button
+window.addEventListener('scroll', () => {
+    const scrollToTopBtn = document.getElementById('btn-back-to-top');
+    if (window.scrollY > 60) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+// Scroll to top functionality
+document.getElementById('btn-back-to-top').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+</script>
+</body>
+</html> 

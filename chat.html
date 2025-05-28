@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SevenZ - Affordable Website Pricing</title>
+    <title>Showcase Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sen:wght@400;700&family=Mochiy+Pop+P+One&display=swap">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         
-
         .container {
             width: 100%;
             max-width: 1200px;
@@ -66,162 +65,27 @@
             content: "──";
             margin: 0 10px;
         }
-
-       
-        /* Pricing Page Specific Styles */
-        .pricing-hero {
+                /* Pricing Page Specific Styles */
+        .Hero-Section {
             padding: 180px 0 100px;
             text-align: center;
             background: linear-gradient(135deg, #272727 0%, #272727 100%);
             color: white;
         }
 
-        .pricing-hero h1 {
+        .Hero-Section h1 {
             font-size: 48px;
             margin-bottom: 20px;
         }
 
-        .pricing-hero p {
+        .Hero-Section p {
             font-size: 18px;
             max-width: 700px;
             margin: 0 auto 40px;
         }
 
-        .pricing-plans {
-            padding: 80px 0;
-        }
 
-        .plans-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .plan-card {
-            background: white;
-            border-radius: 15px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .plan-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .plan-card.popular {
-            border: 2px solid var(--primary);
-        }
-
-        .popular-badge {
-            position: absolute;
-            top: 0;
-            right: 30px;
-            background-color: var(--primary);
-            color: white;
-            padding: 5px 15px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .plan-name {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-
-        .plan-price {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-
-        .plan-price span {
-            font-size: 16px;
-            color: var(--gray);
-        }
-
-        .plan-features {
-            margin-bottom: 30px;
-        }
-
-        .plan-features li {
-            list-style: none;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
-        }
-
-        .plan-features li:before {
-            content: "✓";
-            color: var(--primary);
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        .plan-cta {
-            text-align: center;
-        }
-
-        .faq {
-            padding: 80px 0;
-            background-color: white;
-        }
-
-        .faq-item {
-            margin-bottom: 30px;
-        }
-
-        .faq-question {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-
-        .faq-answer {
-            color: var(--gray);
-        }
-
-        .guarantee {
-            padding: 80px 0;
-            text-align: center;
-            background-color: var(--dark);
-            color: white;
-        }
-
-        .guarantee h2 {
-            margin-bottom: 30px;
-        }
-
-        .guarantee p {
-            max-width: 800px;
-            margin: 0 auto 40px;
-            font-size: 18px;
-        }
-
-        /* Footer - same as index.html */
-        footer {
-            background-color: var(--dark);
-            color: var(--text-light);
-            padding: 10px 0 30px;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 992px) {
-            .plans-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
+                @media (max-width: 768px) {
     .mobile-menu-btn {
     display: block;
     z-index: 1001;
@@ -256,37 +120,19 @@
     margin-left: 0;
     margin-top: 20px;
     }
-
-
-            .pricing-hero {
-                padding: 150px 0 60px;
-            }
-            
-            .pricing-hero h1 {
-                font-size: 36px;
-            }
-            
-            .plans-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .plan-card.popular {
-                transform: none;
-            }
-        }
+}
     </style>
-
 </head>
 <body>
-        <!-- Scroll to top button-->
+            <!-- Scroll to top button-->
    <button
         type="button"
         class="btn-back-to-top"
         id="btn-back-to-top"
         >
-  <i class="fas fa-arrow-up"></i>
-</button>
-
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <!-- Header - same as index.html -->
     <header>
         <div class="container header-container">
@@ -304,123 +150,22 @@
         </div>
     </header>
 
-    <!-- Pricing Hero Section -->
-    <section class="pricing-hero">
+    <!-- Hero Section -->
+    <section class="Hero-Section">
         <div class="container">
-            <div class="section-title">──   Affordable Pricing   ──</div>
-            <h1>Simple, Transparent Pricing</h1>
-            <p>As a beginner designer, I offer high-quality websites at prices that won't break your budget. Choose the plan that fits your needs.</p>
+            <div class="section-title">──   Concept Design   ──</div>
+            <h1>Chat App Website</h1>
+            <p>This is a homepage design and build for a concept project – a chat application. I have designed the page first then later built a responsive page in Webflow.</p>
         </div>
     </section>
 
-    <!-- Pricing Plans Section -->
-    <section class="pricing-plans">
+    <!-- Image Showcase-->
+    <section class="image-showcase">
         <div class="container">
-            <div class="plans-container">
-                <!-- Basic Plan -->
-                <div class="plan-card">
-                    <div class="plan-name">Basic Website</div>
-                    <div class="plan-price">$199<span> / one-time</span></div>
-                    <ul class="plan-features">
-                        <li>3-5 Page Website</li>
-                        <li>Responsive Design</li>
-                        <li>Basic SEO Setup</li>
-                        <li>Contact Form</li>
-                        <li>1 Round of Revisions</li>
-                        <li>1 Week Delivery</li>
-                    </ul>
-                    <div class="plan-cta">
-                        <a href="index.html#contact" class="btn btn-outline">Get Started</a>
-                    </div>
-                </div>
-
-                <!-- Popular Plan -->
-                <div class="plan-card popular">
-                    <div class="popular-badge">MOST POPULAR</div>
-                    <div class="plan-name">Standard Website</div>
-                    <div class="plan-price">$349<span> / one-time</span></div>
-                    <ul class="plan-features">
-                        <li>5-7 Page Website</li>
-                        <li>Mobile-First Design</li>
-                        <li>Advanced SEO</li>
-                        <li>Contact Form + Analytics</li>
-                        <li>3 Rounds of Revisions</li>
-                        <li>Custom Graphics</li>
-                        <li>2 Weeks Delivery</li>
-                    </ul>
-                    <div class="plan-cta">
-                        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-
-                <!-- Premium Plan -->
-                <div class="plan-card">
-                    <div class="plan-name">E-Commerce Website</div>
-                    <div class="plan-price">$599<span> / one-time</span></div>
-                    <ul class="plan-features">
-                        <li>Up to 10 Pages</li>
-                        <li>Online Store Setup</li>
-                        <li>Product Management</li>
-                        <li>Secure Checkout</li>
-                        <li>Payment Gateway</li>
-                        <li>5 Rounds of Revisions</li>
-                        <li>3 Weeks Delivery</li>
-                    </ul>
-                    <div class="plan-cta">
-                        <a href="index.html#contact" class="btn btn-outline">Get Started</a>
-                    </div>
-                </div>
-            </div>
+            <img src="assets/chat app.jpg" alt="Website Showcase" style="width: 100%; height: auto; border-radius: 10px;">
         </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-title">──   Actually Frequently asked   ──</div>
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">How Long it takes to make my website?</div>
-                    <div class="faq-answer">
-                        <p>The timeline depends on the complexity of your project. A simple brochure website typically takes 2-3 weeks, while more complex e-commerce sites may take 4-6 weeks. After our initial consultation, I'll provide you with a detailed timeline based on your specific requirements.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">What platforms do you work with?</div>
-                    <div class="faq-answer">
-                        <p>I primarily work with modern web technologies including HTML5, CSS3, JavaScript. For CMS solutions, I specialize in Figma (industry level software), webdflow, framer, wordpress. I choose the platform that best fits your specific needs and goals.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Do you provide hosting services?</div>
-                    <div class="faq-answer">
-                        <p>While I don't provide hosting directly, I can recommend reliable hosting providers based on your needs. I also offer assistance with setting up your hosting account and can manage the technical aspects of getting your site live.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Can you help with website maintenance?</div>
-                    <div class="faq-answer">
-                        <p>Yes, I offer ongoing maintenance packages that include regular updates, security monitoring, backups, and content updates. These can be customized to your specific needs and budget.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item active">
-                    <div class="faq-question">What's included in your pricing?</div>
-                    <div class="faq-answer">
-                        <p>My pricing includes custom design, development, responsive implementation, basic SEO setup, and initial training on how to manage your content. Additional services like custom functionality, e-commerce setup, or advanced SEO can be added as needed. All projects include a 30-day warranty period for any bug fixes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Guarantee Section -->
+            <!-- Guarantee Section -->
     <section class="guarantee">
         <div class="container">
             <h2>100% Satisfaction Guarantee</h2>
@@ -430,7 +175,7 @@
     </section>
 
     <!-- Footer - same as index.html -->
-    <footer>
+    <footer style="padding: 0;">
         <div class="container">
             <div class="footer-social">
                     <h3>Social</h3>
@@ -452,7 +197,8 @@
         </div>
     </footer>
     <script src="script.js"></script>
-<script>
+    </script>
+    <script>
     //show scroll to top button
 window.addEventListener('scroll', () => {
     const scrollToTopBtn = document.getElementById('btn-back-to-top');
@@ -471,6 +217,5 @@ document.getElementById('btn-back-to-top').addEventListener('click', () => {
 });
 
 </script>
-        
 </body>
-</html>
+</html> 

@@ -6,13 +6,22 @@
     <title>SevenZ - Premium Web Design</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sen:wght@400;700&family=Mochiy+Pop+P+One&display=swap">
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll to top button-->
+   <button
+        type="button"
+        class="btn-back-to-top"
+        id="btn-back-to-top"
+        >
+  <i class="fas fa-arrow-up"></i>
+</button>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo">SevenZ</div>
+            <a href="index.html" class="logo" style="text-decoration: none;">SevenZ</a>
             <button class="mobile-menu-btn" onclick="mymobfunction()">☰</button>
             <nav>
                 <ul>
@@ -37,7 +46,7 @@
         </div>
     </div>
     <div class="hero-image">
-        <img src="assets/hero-image.jpg" alt="Website design example">
+        <img src="assets/hero-image.jpg" alt="Hero Image">
     </div>
 </section>
 
@@ -50,7 +59,7 @@
             <h2>I make user-experience focused websites that your users will love</h2>
             <p>Let's be honest—too many websites out there are frustrating, confusing, and just don't work the way they should. I'm here to change that.</p>
             <div style="margin-top: 40px;">
-                <a href="#contact" class="btn btn-primary">ABOUT ME & MY APPROACH →</a>
+                <a href="about.html" class="btn btn-primary">ABOUT ME & MY APPROACH →</a>
             </div>
         </div>
         <div class="about-image-grid">
@@ -67,10 +76,11 @@
             
             <div class="services-grid">
                 <div class="service-card featured">
-                    <div class="service-icon">
-                        <img src="assets/icon-design.png" alt="Design Icon">
-                    </div>
+                    
                     <div class="service-content">
+                        <div class="service-icon">
+                            <img src="assets/icon-design.png" alt="Design Icon">
+                        </div>
                         <h3><a href="#">Website Design <span>→</span></a></h3>
                         <p>Launch your brand with a stunning new website or give your existing site a fresh, modern makeover. Let's create a site that works for you!</p>
                         <div class="service-cta">
@@ -173,56 +183,48 @@
     <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <div class="section-title">──   my clients loved them!</div>
+            <div class="section-title">──   Look At That   ──</div>
             <h2>Past Work Showcase</h2>
             
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-1.jpg" alt="Portfolio Project 1">
+                
+                <a href="Team.html">
+                    <div class="portfolio-item">
+                        <img src="assets/portfolio-1.jpg" alt="Portfolio Project 2">
+                        <div class="portfolio-overlay">
+                        <h3>Team Website</h3>
+                        <p>Modern design for team collaboration platform</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="chat.html">
+                    <div class="portfolio-item">
+                        <img src="assets/portfolio-2.jpg" alt="Portfolio Project 3">
+                        <div class="portfolio-overlay">
+                        <h3>Chat App</h3>
+                        <p>Home Page Design for a chat application</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="gates.html">
+                    <div class="portfolio-item">
+                    <img src="assets/portfolio-3.jpg" alt="Portfolio Project 4">
                     <div class="portfolio-overlay">
-                        <h3>E-commerce Website</h3>
-                        <p>Fully responsive online store with custom checkout</p>
+                        <h3>Portfolio Website </h3>
+                        <p>Redesign For a GatesNFences Company</p>
                     </div>
                 </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-2.jpg" alt="Portfolio Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Corporate Website</h3>
-                        <p>Modern design for a financial services company</p>
+                </a>
+                <a href="punk.html">
+                    <div class="portfolio-item">
+                        <img src="assets/portfolio-4.jpg" alt="Portfolio Project 5">
+                        <div class="portfolio-overlay">
+                            <h3>Website Redesign</h3>
+                            <p>Redesign for the iconic Game security brand of 90's (Concept)</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-3.jpg" alt="Portfolio Project 3">
-                    <div class="portfolio-overlay">
-                        <h3>Restaurant Website</h3>
-                        <p>Interactive menu and reservation system</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-4.jpg" alt="Portfolio Project 4">
-                    <div class="portfolio-overlay">
-                        <h3>Portfolio Website</h3>
-                        <p>Creative showcase for a photographer</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-5.jpg" alt="Portfolio Project 5">
-                    <div class="portfolio-overlay">
-                        <h3>SaaS Platform</h3>
-                        <p>Dashboard interface for a tech startup</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/portfolio-6.jpg" alt="Portfolio Project 6">
-                    <div class="portfolio-overlay">
-                        <h3>Non-Profit Website</h3>
-                        <p>Donation-focused design for a charity</p>
-                    </div>
+                </a>
                 </div>
             </div>
         </div>
@@ -238,10 +240,10 @@
                 <div class="testimonial-card">
                     <p>"Jaskaran not only delivered the project on time but also went above and beyond to ensure that every detail was taken care of. Their attention to detail and dedication to quality truly impressed me. The final product was exceptional, and it perfectly met my requirements."</p>
                     <div class="testimonial-author">
-                        <img src="assets/client-1.jpg" alt="Azzan Shahid">
+                        <img src="assets/User.png" alt="Azzan Shahid">
                         <div class="author-info">
                             <h4>Azzan Shahid</h4>
-                            <p>Fiverr</p>
+                            <p>CEO | Safety Hub</p>
                         </div>
                     </div>
                 </div>
@@ -249,10 +251,10 @@
                 <div class="testimonial-card">
                     <p>"A very quick service, just what I wanted."</p>
                     <div class="testimonial-author">
-                        <img src="assets/client-2.jpg" alt="Balraj">
+                        <img src="assets/User.png" alt="Balraj">
                         <div class="author-info">
                             <h4>Balraj</h4>
-                            <p>Fiverr</p>
+                            <p>Client | Fiverr</p>
                         </div>
                     </div>
                 </div>
@@ -260,7 +262,7 @@
                 <div class="testimonial-card">
                     <p>Communication first class and quick, understood requirements and made adjustments to deliver desired results. Happy to recommend 10/10.</p>
                     <div class="testimonial-author">
-                        <img src="assets/client-3.jpg" alt="Anoop">
+                        <img src="assets/User.png" alt="Anoop">
                         <div class="author-info">
                             <h4>Anoop</h4>
                             <p>Consultative Sales Professional</p>
@@ -316,6 +318,23 @@
         </div>
     </section>
 
+    <!-- Guarantee Section -->
+    <section class="guarantee" id="guarantee">
+        <div class="container gurantee-container">
+            <div class="section-title">──   100% Satisfaction Guarantee   ──</div>
+            <h2>Why Choose Me?</h2>
+            <div class="guarantee-image">
+                <img src="assets/my image.png" alt="myimage">
+            </div>
+            <div>
+                <p>I'm committed to your satisfaction. If you're not happy with the initial design, I'll work with you to make it right. No extra charges for revisions within the agreed scope.</p>
+                <a href="index.html#contact" class="btn btn-primary">Start Your Project Today</a>
+            </div>
+            
+        </div>
+        
+    </section>
+
     <!-- Update the contact form section -->
 <section class="contact" id="contact">
     <div class="container contact-container">
@@ -360,22 +379,15 @@
     </div>
 </section>
 
-    <!-- Footer -->
+    <!-- Footer - same as index.html -->
     <footer>
-        <div class="container footer-container">
-            <div class="footer-logo logo">Want to work?</div>
-            
+        <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <p>If you need a modern and powerful website for your business, startup or personally, I am available for work. You can email me directly at <strong>KJStudio@gmail.com</strong>.</p>
-                    
-                    <div class="footer-cta">
-                        <a href="#contact" class="btn btn-primary">Contact Me</a>
-                        <a href="pricing.html" class="btn btn-outline">Website Pricing →</a>
-                    </div>
+                    <p>If you need a modern and powerful website for your business, startup or personally, I am available for work. You can email me directly at <strong>jaskarantamber+Studio@gmail.com</strong>.</p>
                 </div>
-                
-                <div class="footer-social">
+            </div>
+            <div class="footer-social">
                     <h3>Social</h3>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/designerjaskaran/" class="social-icon">
@@ -389,15 +401,32 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            
             <div class="copyright">
                 <p>&copy; 2023 SevenZ. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <script src="script.js"></script>
 
+<!-- JavaScript -->
+    <script src="script.js"></script>
+<script>
+    //show scroll to top button
+window.addEventListener('scroll', () => {
+    const scrollToTopBtn = document.getElementById('btn-back-to-top');
+    if (window.scrollY > 60) {
+        scrollToTopBtn.style.display = 'block';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+// Scroll to top functionality
+document.getElementById('btn-back-to-top').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+</script>
 </body>
 </html>
