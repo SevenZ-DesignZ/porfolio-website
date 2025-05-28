@@ -1013,7 +1013,10 @@
     font-size: 32px;
     }
 
+    .portfolio-item {
+    height: 300px;
 
+    }
   
     .about-image-grid {
       max-width: 90%;
@@ -1032,6 +1035,9 @@
     }
   
      .submit-btn {font-size: 18px;
+  }
+  .btn{
+    font-size: 14px;
   }
     .footer-content {
     flex-direction: column;
@@ -1089,7 +1095,7 @@
     size: 50%;
     }
 
-  .h2 {
+    .h2 {
     font-size: 24px;
     }
 
