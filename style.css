@@ -786,7 +786,6 @@
     max-width: 1200px;
     margin-bottom: 60px;
     }
-
     .footer-social {
     flex: 1;
     max-width: 300px;
@@ -983,10 +982,37 @@
   
     @media (max-width: 768px) {
 
-  
+   .logo {
+    font-size: 24px;
+    }
     .hero h1 {
     font-size: 36px;
     }
+    .services h2 {
+    font-size: 32px;
+    }
+    .about h2 {
+    font-size: 32px;
+    }
+    .features h2 {
+    font-size: 32px;
+    }
+    .portfolio h2 {
+    font-size: 32px;
+    }
+    .testimonials h2 {
+    font-size: 32px;
+    }
+    .contact h2 {
+    font-size: 32px;
+    } 
+    .faq h2 {
+    font-size: 32px;
+    }
+    .guarantee h2 {
+    font-size: 32px;
+    }
+
 
   
     .about-image-grid {
@@ -1005,6 +1031,8 @@
     grid-template-columns: 1fr;
     }
   
+     .submit-btn {font-size: 18px;
+  }
     .footer-content {
     flex-direction: column;
     }
@@ -1027,10 +1055,62 @@
     .hero h1 {
     font-size: 32px;
     }
+    .services h2 {
+    font-size: 24px;
+    }
+    .about h2 {
+    font-size: 24px;
+    }
+    .features h2 {
+    font-size: 24px;
+    }
+    .portfolio h2 {
+    font-size: 24px;
+    }
+    .testimonials h2 {
+    font-size: 24px;
+    }
+    .contact h2 {
+    font-size: 24px;
+    } 
+    .faq h2 {
+    font-size: 24px;
+    }
+    .guarantee h2 {
+    font-size: 24px;
+    }
+
+
+    .hero .hero-btns {
+    flex-direction: column;
+    align-items: center;
+    } 
     .about-image-grid {
     size: 50%;
     }
-  
+
+  .h2 {
+    font-size: 24px;
+    }
+
+    .service-content h3 {
+    font-size: 20px;
+    justify-content: center;
+    }
+    .features h3 {
+      font-size: 20px;
+    }
+     .service-card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    }
+
+    .faq-question {
+    font-size: 20px;
+    }
     .section-title::before,
     .section-title::after {
     content: "";
@@ -1040,7 +1120,8 @@
     .btn {
     padding: 12px 24px;
     }
-  
+    .submit-btn {font-size: 14px;
+  }
     .contact-form {
     padding: 30px;
     }
