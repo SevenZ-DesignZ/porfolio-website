@@ -860,7 +860,7 @@
     @media (max-width: 992px) {
 
  
-     .mobile-menu-btn {
+    .mobile-menu-btn {
     display: block;
     z-index: 1001;
     }
@@ -875,8 +875,7 @@
 
     nav {
     position: fixed;
-    display: flex;
-    justify-content: center;
+    display: none;
     top: 120px;
     left: 0;
     width: 100%;
@@ -884,7 +883,7 @@
     padding: 40px 20px;
     transform: translateY(-18%);
     opacity: 0;
-    transition: all 0.3s ease;
+    transition: all 0.9s ease;
     z-index: 1000;
     border-radius: 20px;
     height: auto;
@@ -892,6 +891,7 @@
     }
 
     nav.active {
+    display: block;
     transform: translateY(0);
     opacity: 1;
     backdrop-filter: blur(10px);
